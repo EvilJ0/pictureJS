@@ -1,0 +1,68 @@
+html,body{
+       height: 100%;
+  display:flex;
+    flex:1;
+    margin: 0;
+    padding: 0;
+
+    /* flex-direction: row; */
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    width: 100%;
+    padding: 15px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 15px;
+    grid-template-areas:    "tabs imageMetaData"
+                            "listImages selectedImage";
+
+}
+.tabs{
+grid-area: tabs;
+}
+
+.listImages{
+    display: flex;
+    flex-direction: row;
+    grid-area: listImages;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
+    background-color: #d6d0d087;
+    border-radius: 10px;
+}
+.imageMetaData{
+    grid-area: imageMetaData;
+}
+
+.selectedImage{
+ grid-area: selectedImage;
+ display: flex;
+ flex-direction: column;
+    flex:1;
+
+}
+
+div{
+    /*border: 1px blue solid;*/
+
+}
+
+
+
+
+img.preview {
+    margin: 10px;
+    border-radius: 10px;
+    width: 40%;
+
+}
+
+.big{
+    display: block;
+    height: 50%;
+    width: 50%;
+}
