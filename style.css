@@ -1,7 +1,7 @@
-html,body{
-       height: 100%;
-  display:flex;
-    flex:1;
+html, body {
+    height: 100%;
+    display: flex;
+    flex: 1;
     margin: 0;
     padding: 0;
 
@@ -9,7 +9,7 @@ html,body{
     box-sizing: border-box;
 }
 
-main{
+main {
     display: grid;
     width: 100%;
     padding: 15px;
@@ -20,11 +20,12 @@ main{
                             "listImages selectedImage";
 
 }
-.tabs{
-grid-area: tabs;
+
+.tabs {
+    grid-area: tabs;
 }
 
-.listImages{
+.listImages {
     display: flex;
     flex-direction: row;
     grid-area: listImages;
@@ -34,24 +35,24 @@ grid-area: tabs;
     background-color: #d6d0d087;
     border-radius: 10px;
 }
-.imageMetaData{
+
+.imageMetaData {
     grid-area: imageMetaData;
 }
 
-.selectedImage{
- grid-area: selectedImage;
- display: flex;
- flex-direction: column;
-    flex:1;
-
+.selectedImage {
+    grid-area: selectedImage;
+    display: flex;
+    flex: 1;
+  justify-content: center;
+    align-items: center;
+border: 1px solid red;
 }
 
-div{
+div {
     /*border: 1px blue solid;*/
 
 }
-
-
 
 
 img.preview {
@@ -61,8 +62,7 @@ img.preview {
 
 }
 
-.big{
-    display: block;
-    height: 50%;
-    width: 50%;
+.big {
+
+    width: 39%;
 }

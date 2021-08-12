@@ -17,8 +17,11 @@ function createDom(data, domEditing, tagName,className){
     let newDom=createElement(tagName,className);
     if (tagName=='img'){
         newDom.src=data.download_url;
+        newDom.data=data;
+        newDom.alt=data.author
     }
-    // console.log(newDom)
+    // console.log(newDom.data)
+
     domEditing.appendChild(newDom)
 
 }
@@ -28,7 +31,9 @@ function clickHandler(icon){
 
         bigImage.src=icon.src
 
-        console.log(bigImage)
+        console.log(icon.data)
+        // console.log(icon.src)
+        // console.log(bigImage.src)
     })
 
 }
