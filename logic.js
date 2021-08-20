@@ -1,53 +1,35 @@
 import pictures from "./pictures.js";
+import events from "./events.js";
+import domEditor from "./domEditor.js";
+let previews = document.querySelector(".listImages");
+let selectedImage = document.querySelector('.selectedImage');
 
-console.log(pictures)
-let previews=document.querySelector(".listImages");
-let selectedImage=document.querySelector('.selectedImage');
-let bigImage=selectedImage.querySelector('.big')
-
-
-
-function createElement(tagName,className){
-    let element=document.createElement(tagName);
-    element.classList.add(className);
-    return element
-}
-
-function createDom(data, domEditing, tagName,className){
-    let newDom=createElement(tagName,className);
-    if (tagName=='img'){
-        newDom.src=data.download_url;
-        newDom.data=data;
-        newDom.alt=data.author
+class DataType {
+    constructor(author, download_url, height, id, url, width) {
+        this.author = author;
+        this.download_url = download_url;
+        this.height = height;
+        this.id = id;
+        this.url = url;
+        this.width = width;
     }
-    // console.log(newDom.data)
-
-    domEditing.appendChild(newDom)
 
 }
 
-function clickHandler(icon){
-    icon.addEventListener('click',function(){
-
-        bigImage.src=icon.src
-
-        console.log(icon.data)
-        // console.log(icon.src)
-        // console.log(bigImage.src)
-    })
-
-}
-
-
-async function  renderIcons(pictures){
-    for(let i=0;i<pictures.length;i++){
-        createDom(pictures[i],previews,'img','preview');
+async function renderIcons(pictures) {
+    for (let i in pictures) {
+        domEditor.createDom(pictures[i], previews, 'img', 'preview');
     }
 }
-renderIcons(pictures).then(function (){
-    let icons=document.querySelectorAll('.preview');
-    for(let i=0;i<pictures.length;i++){
-        clickHandler(icons[i])
+
+renderIcons(pictures).then(function () {
+    events.searchInLocalStorage(pictures);
+    let icons = document.querySelectorAll('.preview');
+    for (let i in pictures) {
+        events.clickHandler(icons[i],selectedImage);
+        events.tripeClickHandler(icons[i]);
     }
 })
+
+
 

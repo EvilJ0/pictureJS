@@ -4,7 +4,9 @@ async function fetchDataAsync(url) {
     return await response.json()
 }
 
-let pictures=await fetchDataAsync('https://picsum.photos/v2/list');
 
+
+let pictures=await fetchDataAsync('https://picsum.photos/v2/list');
+// localStorage.setItem('pictures',JSON.stringify(pictures))
 
 export default pictures

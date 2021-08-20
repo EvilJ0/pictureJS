@@ -4,9 +4,6 @@ html, body {
     flex: 1;
     margin: 0;
     padding: 0;
-
-    /* flex-direction: row; */
-    box-sizing: border-box;
 }
 
 main {
@@ -18,13 +15,22 @@ main {
     gap: 15px;
     grid-template-areas:    "tabs imageMetaData"
                             "listImages selectedImage";
-
 }
 
 .tabs {
     grid-area: tabs;
 }
 
+/*.listImages {*/
+/*    display: grid;*/
+/*    grid-area: listImages;*/
+/*    grid-template-columns: repeat(2,40%);*/
+/*    grid-template-rows: unset;*/
+/*    overflow: auto;*/
+/*    grid-auto-flow:dense;*/
+/*    background-color: #d6d0d087;*/
+/*    border-radius: 10px;*/
+/*}*/
 .listImages {
     display: flex;
     flex-direction: row;
@@ -44,25 +50,27 @@ main {
     grid-area: selectedImage;
     display: flex;
     flex: 1;
-  justify-content: center;
+    justify-content: center;
     align-items: center;
-border: 1px solid red;
+    border: 1px solid red;
 }
 
-div {
-    /*border: 1px blue solid;*/
-
-}
-
-
-img.preview {
+.preview {
     margin: 10px;
     border-radius: 10px;
     width: 40%;
 
 }
 
-.big {
 
-    width: 39%;
+
+.selectedImage {
+
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.selected{
+    border: 10px green solid;
 }
