@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1400px){
+    main {
+        display: grid;
+        width: 100%;
+        /*padding: 0;*/
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 10fr 6fr;
+        gap:0;
+        grid-template-areas:
+            "imageMetaData imageMetaData"
+            "selectedImage selectedImage"
+            "listImages listImages";
+    }
+
+    .listImages{
+        grid-template-columns: repeat(4,20%);
+    }
+
+    .selectedImage{
+        margin: 15px 0 15px 0;
+    }
+
+}

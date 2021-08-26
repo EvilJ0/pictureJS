@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095b8436-f5f1-49f5-9829-341a6df66e02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/1400resolution.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/domEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/localStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/pictures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picturesJS.html" beforeDir="false" afterPath="$PROJECT_DIR$/picturesJS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pictures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picturesJS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -34,12 +42,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zaverstai/portfolio-step-1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\pictureJS\public" />
+      <recent name="D:\projects\index" />
+      <recent name="D:\projects\pictureJS\css" />
+      <recent name="D:\projects\pictureJS\js" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="picturesJS.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pictureJS/picturesJS.html" useBuiltInWebServerPort="true">
+    <configuration name="picturesJS.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pictureJS/picturesJS.html?_ij_reload" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -64,6 +82,12 @@
       <workItem from="1628999196947" duration="697000" />
       <workItem from="1629025057750" duration="594000" />
       <workItem from="1629320614366" duration="10369000" />
+      <workItem from="1629475919753" duration="268000" />
+      <workItem from="1629792678820" duration="14813000" />
+      <workItem from="1629866565446" duration="6183000" />
+      <workItem from="1629873016466" duration="178000" />
+      <workItem from="1629873203441" duration="7433000" />
+      <workItem from="1629954641021" duration="11267000" />
     </task>
     <servers />
   </component>
